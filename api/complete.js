@@ -1,5 +1,5 @@
 const { completePayment } = require("../lib/pi");
-const supabase = require("../lib/supabase");
+let supabase = null; try { supabase = require("../lib/supabase"); } catch(e) { console.error("Supabase init error:", e.message); }
 
 module.exports = async (req, res) => {
   if (req.method === "OPTIONS") {
