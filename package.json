@@ -1,16 +1,14 @@
 {
-    "name":  "piflea-pi-backend",
-    "version":  "1.0.0",
-    "description":  "Pi Network payment backend for Pi Flea Market",
-    "main":  "index.js",
-    "scripts":  {
-                    "start":  "vercel dev"
-                },
-    "dependencies":  {
-                         "axios":  "^1.6.0",
-                         "@supabase/supabase-js":  "^2.39.0"
-                     },
-    "devDependencies":  {
-                            "vercel":  "^33.0.0"
-                        },
-    }
+  "name": "piflea-pi-backend",
+  "version": "1.0.0",
+  "description": "Pi Network payment backend for Pi Flea Market",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5"
+  }
+}
